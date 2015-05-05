@@ -17,7 +17,7 @@ Requirements:
 ### Running the Example
 
 1. Download or fork the sample project.
-1. [Register the app in Azure Active Directory](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md). The app should be registered as a web app with a Sign-on URL that matches the url of your development environment. IE: http://127.0.0.1/, 
+1. [Register the app in Azure Active Directory](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md). The app should be registered as a web app with a Sign-on URL that matches the url of your development environment. IE: http://127.0.0.1/
 1. Set the Reply Url to the url of your development environment /get_consent. IE: http://127.0.0.1/get_consent.
 1. In the permissions to other applications section give the Office 365 Exchange Online application permission to "Read and write calendars in all mailboxes" and "Read mail in all mailboxes."
 
@@ -42,7 +42,7 @@ Once [Composer][] is installed run the following command to include the [ramsey/
 1. Start your development server and enter the url to the root url. IE: http://127.0.0.1/
 1. Click the link "Connect Me!" and login using an administrative account. Once logged in you will be redirected back to the development site. You will see a link to Email and Calendar. 
 1. On the Email page enter a valid email address for a user in the Office 365 tenant and click the "Submit" button. You will receive a response of the most recent 10 emails for the user.
-14) On the Calendar page enter a valid email address for a user in the Office 365 tenant and click the "Submit" button. You will receive a response of all calendar events in the next 30 days for the user.
+1. On the Calendar page enter a valid email address for a user in the Office 365 tenant and click the "Submit" button. You will receive a response of all calendar events in the next 30 days for the user.
 
 ----------
 Connect with me on Twitter [@marknelsondev](https://twitter.com/marknelsondev)
