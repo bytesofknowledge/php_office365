@@ -22,7 +22,7 @@ Requirements:
 1. In the permissions to other applications section give the Office 365 Exchange Online application permission to "Read and write calendars in all mailboxes" and "Read mail in all mailboxes."
 
 1. Configure an X509 certificate for your app following the directions [here](http://blogs.msdn.com/b/exchangedev/archive/2015/01/21/building-demon-or-service-apps-with-office-365-mail-calendar-and-contacts-apis-oauth2-client-credential-flow.aspx).
-1. Extract the private key in RSA format from your certificate and save it to a PEM file. You can use openssl to do this: 'openssl pkcs12 -in <path to PFX file> -nodes -nocerts -passin pass:<cert password> | openssl rsa -out appcert.pem'
+1. Extract the private key in RSA format from your certificate and save it to a PEM file. You can use openssl to do this: `openssl pkcs12 -in <path to PFX file> -nodes -nocerts -passin pass:<cert password> | openssl rsa -out appcert.pem'`
 
 1. Add the private key .PEM file to office365/certificates/
 1. Open the file index.php and set the Client Id, Secret, Thumbprint.
@@ -33,9 +33,8 @@ Requirements:
 1. If you named your private key .PEM file something other than appcert.PEM open the file office365/Office365.php and change the static variable $privateKeyFileName to the name of your certificate.
 
 1. Install [Composer][] and [ramsey/uuid][]. If you do not want to include [Composer][] and [ramsey/uuid][] in the project then go to the file office365/ApiResource.php and modify the method nonce() to return a custom nonce string.
-To install [Composer][] and [ramsey/uuid][] navigate to the root folder of the project in your command prompt and run the following command to install [Composer][] and the [ramsey/uuid][] package.
+To install [Composer][] and [ramsey/uuid][] navigate to the root folder of the project. In your command prompt and run the following command to install [Composer][].
 `curl -sS https://getcomposer.org/installer | php -- --install-dir=bin`
-
 Once [Composer][] is installed run the following command to include the [ramsey/uuid][] project.
 `composer require ramsey/uuid`
 

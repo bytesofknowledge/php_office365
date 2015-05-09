@@ -6,10 +6,10 @@ require_once('office365/init.php');
 /**
  * Enter your client id, secret key, thumbprint and redirect url below
  */
-\Office365\Office365::setClientId('55c2505d-e034-4952-865c-d6bbcb89b067');
-\Office365\Office365::setSecret('NbZgwY897d2Sm7ajLz4ODvTEfnSE9j3DCuF0C5lB9D8=');
-\Office365\Office365::setThumbprint('k9fGLgIzTuOMInaA/t+pBodYFe8=');
-\Office365\Office365::setAuthorizationRedirectUrl('http://local.therealmarknelson.com/consent');
+\Office365\Office365::setClientId('');
+\Office365\Office365::setSecret('');
+\Office365\Office365::setThumbprint('');
+\Office365\Office365::setAuthorizationRedirectUrl('');
 
 //sample pages
 include('views/header.php');
