@@ -16,12 +16,7 @@ class Mail extends ApiResource
 		$accessToken = $_SESSION['access_token'];
 
 		// Build the API request paramaters
-		$queryParams = '?$select=
-						From,
-						Subject,
-						DateTimeReceived
-						&$orderby=DateTimeReceived
-						%20' . $order .
+		$queryParams = '?$select=From,Subject,DateTimeReceived&$orderby=DateTimeReceived%20' . $order .
 						'&$top=' . $count;
 
 		// Build the API Base Url
